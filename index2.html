@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+
+    .um{    display: flex;
+            gap: 10px;}
+
+    .bold{font-weight: 600;}
+
+    .nav{   margin-left: 250px;
+            margin-right: 250px; 
+            display: flex ;
+            justify-content: space-between;
+            margin-top: 20px;
+            background-color: white;
+            border-radius: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;}
+
+    .lol{
+            margin-left: 250px;
+            margin-right: 250px; 
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            }
+            
+    .lol2{  margin-left: 250px;
+            margin-right: 250px;            
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-top: 15px;
+            padding-bottom: 15px;}
+    </style>
+</head>
+<body class=" bg-blue-50">
+    <header>
+        <nav class="nav">
+            <div>
+                <div class="um">
+                 <div ><img src="A5-Dev-Board/assets/logo.png" alt=""></div>
+                 <div class="color text-3xl"><h2 class="color">Dev<span class="bold">Board</span></h2></div>
+                </div> 
+            </div>
+            <div>
+                <a href="index.html">
+                    
+                <button class="bg-blue-500 rounded-lg px-4 py-2 text-2xl font-semibold text-white">Back To Desk</button>
+               
+                </a>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <section> <h1 class="text-3xl font-bold items-center lol"> BLOGS</h1></section>
+        <section class="bg-white rounded-lg lol2"><p class="font-bold">Question-1: What are the different ways to select an element in the DOM?
+        </p> <br>
+        <p class="text-gray-500">Selecting by Id (getElementById),Class(getElementsByClassName),Tag Name (getElementsByTagName),CSS Selectors (querySelector),Multiple Elements (querySelectorAll) and so many.</p></section>
+        <section class="bg-white rounded-lg lol2"><p class="font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?
+
+        </p> <br>
+        <p class="text-gray-500"> 1- innerHTML===
+            Reads or writes the entire HTML inside an element. <br>
+        2- innerText=== Contains only the visible text inside an element. <br>
+    3- textContent=== Contains all text content, including hidden text. </p></section>
+        <section class="bg-white rounded-lg lol2"><p class="font-bold">Question-3: What is event delegation in the DOM?
+
+        </p> <br>
+        <p class="text-gray-500">It's an awesome technique in JavaScript where we can add a single event listener to a parent element instead of adding  multiple child elements. <br> So that the number of event listeners will reduce</p></section>
+        <section class="bg-white rounded-lg lol2"><p class="font-bold">Question-4: What is event bubbling in the DOM?
+
+        </p> <br>
+        <p class="text-gray-500">Event Bubbling হলো  যদি একটি  বাটনে ক্লিক করা হয় তাহলে Event টি বাটনের উপর ঘটবে  এবং সেটি Parent element (যেমন একটি div)-এ বাবল হয়ে যাবে। তারপর এটি উপরের দিকে যায়, যতক্ষণ না এটি পেইজের টপ-এ পোঁছায় (যেমন  document)</p></section>
+        <section class="bg-white rounded-lg lol2"><p class="font-bold">Question-5: How do you create, add, and remove elements using JavaScript?
+        </p> <br>
+        <p class="text-gray-500">[To create an element in JavaScript]  document.createElement() <br>
+            [To add]  appendChild() <br>
+            [To remove an element]  removeChild()</p></section>
+
+
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

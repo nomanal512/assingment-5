@@ -4,8 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
-<body>
+<body class=" bg-blue-50">
+    <header> 
+        
+        <nav class="nav">
+        <div>
+            <div class="um">
+             <div><img src="./assets/logo.png" alt=""></div>
+             <div class="color text-5xl"><h2 class="color">Dev<span class="bold">Board</span></h2></div>
+            </div> 
+        </div>
+        <div class="bm">
+           <div class="hm bg-blue-50">
+               <div class="text-50xl"><img src="./assets/checkbox.png" alt=""> </div>
+               <div id="pendingCount" class="dm"><h3>23</h3></div>
+           </div>
+        <div  class="zm bg-blue-50"> <button onclick="document.body.style.backgroundColor=['lightblue', 'red', 'yellow', 'green', 'purple', 'pink', 'orange', 'teal', 'gray', 'gold'][Math.floor(Math.random()*10)]"> <img src="./assets/theme-btn.png" alt=""></button></div>
+
+
+
+
+        
+
+
+
+        </div>
+        </nav>
+       
+    </header>
+
+    <main>
+        <div class="flex gm">
+            
+            <div class="grid grid-cols-3 gap-4 bg-white px-5 py-5 rounded-xl">
+                <div class=" bg-blue-50 rounded-lg p-4 border-none flex justify-center items-center gap-4 g">
+                    <div class="zm bg-white">
+                        <img src="./assets/checkbox.png" alt="">
+    
+                    </div>
+                    <div>
+                        <p>Task Assigned</p> 
+                        <p id="completedCount" class="text-3xl font-semibold">05</p>
+    
+                    </div>
+                </div>
+                <a href="index2.html"></a>
+</main>    
+
+<footer>
+
+</footer>
+
+<script src="script/script.js"></script>
     
 </body>
 </html>
