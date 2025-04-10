@@ -5,6 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <style>
+        .color{ font-weight: 300;
+          
+        }
+        .bold{font-weight: 600;}
+
+        .um{ display: flex;
+            gap: 10px;}
+
+        .hm{display: flex;
+            border-radius: 30px;
+            padding-left: 15px; 
+            padding-right: 15px; 
+            padding-top: 12px;
+            padding-bottom: 2px;}
+
+        .bm{display: flex; 
+            gap: 50px;}
+
+        .nav{margin-left: 250px;
+            margin-right: 250px; 
+            display: flex ;
+            justify-content: space-between;
+            margin-top: 20px;
+            background-color: white;
+            border-radius: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;}
+
+        .gm{
+            margin-left: 250px;
+            margin-right: 244px; 
+            margin-top: 20px;
+            
+         }   
+
+        .text-50xl{ width: 40px;}
+
+        .dm{ font-size: 20px; 
+            font-weight: 700;}
+
+        .zm{border-radius: 30px;
+            padding-left: 10px; 
+            padding-right: 10px; 
+            padding-top: 10px;
+            padding-bottom: 10px;}
+        .lol{
+            text-align: center;
+            }
+
+        .g{margin-right: 100px;}
+
+        .h{margin-left: 100px;}
+
+        .m{  margin-right: 70%;}
+
+        .container {
+            display: grid;
+            grid-template-columns: 5fr 1fr; }
+
+
+    </style>
 </head>
 <body class=" bg-blue-50">
     <header> 
@@ -46,11 +111,195 @@
                     </div>
                     <div>
                         <p>Task Assigned</p> 
-                        <p id="completedCount" class="text-3xl font-semibold">05</p>
+                        <p id="completedCount" class="text-3xl font-semibold">06</p>
     
                     </div>
                 </div>
-                <a href="index2.html"></a>
+                
+
+                <a href="index2.html">
+                    <div class="bg-gradient-to-r from-indigo-400 to-blue-400 text-black rounded-lg p-4 flex items-center"> 
+                      <div><img src="./assets/board.png" alt=""></div>
+                      <div>  
+                        <h2 class="text-lg font-semibold text-white container discover-section">Discover Something New Today!</h2>
+                      </div>
+                    </div>
+                  </a>
+                  
+                
+                </a>
+                    <div class=" bg-blue-50 rounded-lg p-4 border-none flex justify-center items-center gap-4 h">
+                        <div class="zm bg-white">
+                            <img src="./assets/calender.png" alt="">
+        
+                        </div>
+                        <div>
+                            <p class="text-3xl">Wed,</p> 
+                            <p class="text-2xl font-semibold">July Aug 2025</p>
+        
+                        </div>
+        
+                    </div>
+        
+        
+        
+        
+        
+        
+                    <!-- Task Card 1 -->
+                    <div class=" bg-blue-50 rounded-lg p-4 border-none">
+                        <p class="text-xs text-gray-500 font-semibold bg-white rounded-m px-4 py-2 rounded-lg p-4 m">ShopEase</p><br>
+                        <h3 class="text-lg font-semibold text-gray-800">Fix Mobile Button Issue</h3><br>
+                        <p class="text-sm text-gray-500 bg-white rounded-m px-4 py-2 rounded-lg">Debug using Chrome <br> DevTools, check for overlapping...</p>
+                        <div class="mt-3 flex justify-between items-center">
+                            <p class="text-sm text-gray-600">Deadline <br> <span class="font-semibold">21 March 2025</span></p>
+                            <button onclick="changeText1()" id="message" class="completeBtn bg-blue-500 text-white text-sm px-3 py-1 rounded-lg">Complete</button>                
+                        </div>
+                    </div>
+        
+                    <!-- Task Card 2 -->
+                    <div class="bg-blue-50 rounded-lg p-4 border-none">
+                        <p class="text-xs text-gray-500 font-semibold bg-white rounded-m px-4 py-2 rounded-lg m">CloudSync</p><br>
+                        <h3 class="text-lg font-semibold text-gray-800">Add Dark Mode</h3> <br>
+                        <p class="text-sm text-gray-500 bg-white rounded-m px-4 py-2 rounded-lg">Store the user’s preference in <br> localStorage...</p>
+                        <div class="mt-3 flex justify-between items-center">
+                            <p class="text-sm text-gray-600">Deadline <br> <span class="font-semibold">21 March 2025</span></p>
+                            <button onclick="changeText2()" id="message" class="completeBtn bg-blue-500 text-white text-sm px-3 py-1 rounded-lg">Complete</button>               
+                        </div>
+                    </div>
+        
+                    <!-- Task Card 3 -->
+                    <div class="bg-blue-50  rounded-lg p-4 border-none">
+                        <p class="text-xs text-gray-500 font-semibold bg-white rounded-m px-4 py-2 rounded-lg m">SwiftPay</p><br>
+                        <h3 class="text-lg font-semibold text-gray-800">Optimize Home Page</h3><br>
+                        <p class="text-sm text-gray-500 bg-white rounded-m px-4 py-2 rounded-lg">Debug using Chrome <br>DevTools, check for overlapping...</p>
+                        <div class="mt-3 flex justify-between items-center">
+                            <p class="text-sm text-gray-600">Deadline <br> <span class="font-semibold">21 March 2025</span></p>
+                            <button onclick="changeText3()" id="message" class="completeBtn bg-blue-500 text-white text-sm px-3 py-1 rounded-lg">Complete</button>             
+                        </div>
+                    </div>
+        
+                    <!-- Task Card 4 -->
+                    <div class="bg-blue-50  rounded-lg p-4 border-none">
+                        <p class="text-xs text-gray-500 font-semibold bg-white rounded-m px-4 py-2 rounded-lg m">Meta</p><br>
+                        <h3 class="text-lg font-semibold text-gray-800">Add new emoji 🐵</h3><br>
+                        <p class="text-sm text-gray-500 bg-white rounded-m px-4 py-2 rounded-lg">Debug using Chrome <br>DevTools, check for overlapping...</p>
+                        <div class="mt-3 flex justify-between items-center">
+                            <p class="text-sm text-gray-600">Deadline <br> <span class="font-semibold">21 March 2025</span></p>
+                            <button onclick="changeText4()" id="message" class="completeBtn  bg-blue-500 text-white text-sm px-3 py-1 rounded-lg">Complete</button>           
+                        </div>
+                    </div>
+        
+                    <!-- Task Card 5 -->
+                    <div class="bg-blue-50  rounded-lg p-4 border-none">
+                        <p class="text-xs text-gray-500 font-semibold bg-white rounded-m px-4 py-2 rounded-lg m">Google LLC</p><br>
+                        <h3 class="text-lg font-semibold text-gray-800">Integrate OpenAI API</h3><br>
+                        <p class="text-sm text-gray-500 bg-white rounded-m px-4 py-2 rounded-lg">Debug using Chrome <br>DevTools, check for overlapping...</p>
+                        <div class="mt-3 flex justify-between items-center">
+                            <p class="text-sm text-gray-600">Deadline <br> <span class="font-semibold">21 March 2025</span></p>
+                            <button onclick="changeText5()" id="message" class=" completeBtn bg-blue-500 text-white text-sm px-3 py-1 rounded-lg">Complete</button>
+                        </div>
+                    </div>
+        
+                    <!-- Task Card 6 -->
+                    <div class="bg-blue-50  rounded-lg p-4 border-none">
+                        <p class="text-xs text-gray-500 font-semibold bg-white rounded-m px-4 py-2 rounded-lg m">Glassdoor</p><br>
+                        <h3 class="text-lg font-semibold text-gray-800">Improve Job Searching</h3><br>
+                        <p class="text-sm text-gray-500 bg-white rounded-m px-4 py-2 rounded-lg">Debug using Chrome <br>DevTools, check for overlapping...</p>
+                        <div class="mt-3 flex justify-between items-center">
+                            <p class="text-sm text-gray-600">Deadline <br> <span class="font-semibold">21 March 2025</span></p>
+                            <button onclick="changeText6()" id="message" class=" completeBtn bg-blue-500 text-white text-sm px-3 py-1 rounded-lg ">Complete</button>   
+                                         
+                        </div>
+                    </div>
+                </div>
+        
+        
+        
+        
+                <div class="bg-white rounded-xl mx-5 px-11 py-2 ">
+                    <div class="flex justify-center gap-1">
+                        <div>
+                            <img src="./assets/activity.png" alt="">
+        
+                        </div>
+                        <div>
+                            <h2 class="font-semibold">  Activity Log</h2>
+                        </div>
+                    </div> <br>
+                    <div class="lol">
+                    <button class="bg-blue-500 text-white text-sm px-3 py-1 rounded-lg lol">Clear History</button></div>
+        
+        
+        
+        
+                    
+                    
+        
+        
+             
+        
+        <button onclick="changeText1()"></button>
+        <p id="message" class="lol">Completed Tasks</p>
+        
+        <script>
+            function changeText1() {
+                document.getElementById("message").innerText = "Fix Mobile Button Issue";
+            }
+        </script>
+        
+        <button onclick="changeText2()"></button>
+        
+        
+        
+        <script>
+            function changeText2() {
+                document.getElementById("message").innerText = "Add Dark Mode";
+            }
+        </script>
+        
+        <button onclick="changeText3()"></button>
+        
+        
+        <script>
+            function changeText3() {
+                document.getElementById("message").innerText = "Optimize Home Page";
+            }
+        </script>  
+        
+        
+        <button onclick="changeText4()"></button>
+        
+        
+        <script>
+            function changeText4() {
+                document.getElementById("message").innerText = "Add new emoji 🐵";
+            }
+        </script>
+        
+        
+        <button onclick="changeText5()"></button>
+        
+        
+        <script>
+            function changeText5() {
+                document.getElementById("message").innerText = "Integrate OpenAI API";
+            }
+        </script>
+        
+        
+        <button onclick="changeText6()"></button>
+        
+        
+        <script>
+            function changeText6() {
+                document.getElementById("message").innerText = "Improve Job Searching";
+            }
+        </script>
+        
+        
+        
+            </div>
 </main>    
 
 <footer>
